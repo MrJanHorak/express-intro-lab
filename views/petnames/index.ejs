@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <title>express-intro-lab</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Pet Names</h1>
+  <% if(error) { %>
+    <h2><%= error %></h2>
+  <% } %>
+  <ul>
+    <% petnames.forEach(function(petname) { %>
+      <li>
+        <div class="container">
+          <div><b>Name: </b><%= petname.name %></div>
+          <div>-</div>
+          <div><b>Friendly:</b> <%= petname.friendly %></div>
+          <div>-</div> 
+          <div><b>Genus:</b> <%= petname.genus %></div>
+        </div>
+      </li>
+    <% }) %>
+  </ul>
+</body>

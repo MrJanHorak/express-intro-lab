@@ -1,0 +1,23 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  background: #3399ff;
+  list-style-type: none;
+  padding: 20px;
+  width: 675px;
+  margin: auto;
+}
+
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 25px;
+  grid-template-columns: 150px 20px 250px 20px 250px; 
+  column-gap: 5px;
+}
