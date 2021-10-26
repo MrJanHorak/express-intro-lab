@@ -5,14 +5,16 @@ body {
 ul {
   background: #3399ff;
   list-style-type: none;
-  padding: 20px;
+  padding: 10px;
   width: 675px;
   margin: auto;
+  border-radius: 6px;
 }
 
 ul li {
   background: #cce5ff;
   margin: 5px;
+  border-radius: 6px;
 }
 
 .container {

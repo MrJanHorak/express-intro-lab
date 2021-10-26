@@ -16,14 +16,14 @@
     <h2><%= error %></h2>
   <% } %>
   <ul>
-    <% petnames.forEach(function(petname) { %>
+    <% petNames.forEach(function(petName) { %>
       <li>
         <div class="container">
-          <div><b>Name: </b><%= petname.name %></div>
+          <div><b>Name: </b><%= petName.name %></div>
           <div>-</div>
-          <div><b>Friendly:</b> <%= petname.friendly %></div>
+          <div><b>Friendly:</b> <%= petName.friendly %></div>
           <div>-</div> 
-          <div><b>Genus:</b> <%= petname.genus %></div>
+          <div><b>Genus:</b> <%= petName.genus %></div>
         </div>
       </li>
     <% }) %>

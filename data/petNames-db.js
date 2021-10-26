@@ -1,4 +1,4 @@
-const petnames = [
+const petNames = [
   {name: 'Bear', genus: 'Canis', friendly: 'very'},
   {name: 'Meownzie', genus: 'Felis', friendly: 'mostly'},
   {name: 'Nemo', genus: 'Anemonefishes', friendly: 'very'},
@@ -17,7 +17,7 @@ const find = (conditions, callback) => {
       throw new TypeError('Please pass in an object')
     }
     // If the object is empty, return all the todos
-    if (Object.keys(conditions).length === 0) return callback(null, petnames)
+    if (Object.keys(conditions).length === 0) return callback(null, petNames)
     // deal with errors
   } catch (error) {
     console.log(error)

@@ -3,7 +3,7 @@
 import express from 'express'
 
 // import petnames from database
-import * as petnamesDb from './data/petnames-db.js'
+import * as petnamesDb from './data/petNames-db.js'
 
 // create Express App
 
@@ -21,17 +21,17 @@ app.use(express.static('public'))
 // Mount routes
 
 app.get('/', function(req,res){
-  res.redirect('/home')
+  res.redirect('/petNames')
 })
 
 app.get('/home', function(req, res){
   res.render('home')
 })
 
-app.get('/petnames', function(req,res){
-  petnamesDb.find({}, function(error, petnames){
-    res.render('petnames/index', {
-      petnames: petnames,
+app.get('/petNames', function(req,res){
+  petnamesDb.find({}, function(error, petNames){
+    res.render('petNames/index', {
+      petNames: petNames,
       error, error
     })
   })
